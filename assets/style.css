@@ -1,40 +1,52 @@
+:root{
+  --border-style: solid;
+  --border-width: 3px;
+  --padding: 10px;
+  --margin: 20px;
+ 
+}
+
+
 *{
-  font-family: fantasy;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 600;
   
 }
 
 body{ 
-  display: flex;
+  display: relative;
   flex-direction: column;
   flex-wrap: wrap;
-  display: flex;
-  
+  grid-auto-flow: column;
+  background-image: linear-gradient(45deg, rgba(87, 125, 143, 0.775),
+  rgb(82, 154, 198));
 }
 
 header{
   display:flex;
-  flex-wrap:wrap;
+  flex:wrap;
   flex-direction:row;
-  box-sizing: border-box;
   max-width: 100%;
-  border-style: solid grey;
+  border-style:solid;
   text-size-adjust: 15px;
-  align-items:baseline;
+  align-items:center;
   justify-content: space-between;
-  padding: 60px;
-  background: #13293d;
-  color: #fff;
+  padding: 20px;
+  background-image: url(./images/mountian.png);
+  width: 80%;
+    height: 200px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+  border-width: 10px;
+  border-radius: 5px;
 }
 
-nav{
-  display:flex;
-  justify-content:flex-end
-}
-nav a{
+
+header h1, header p, .nav a {
   padding: 14px 20px;
   text-align:center;
-  color: aliceblue;
+  color: rgb(10, 9, 7);
 }
 
 footer {
@@ -44,37 +56,107 @@ footer {
   background: #518dc6;
   color: #fff;
   margin-top: auto;
+  background-image: linear-gradient(180deg, rgb(154, 166, 212),
+  rgb(82, 154, 198));
 }
-
-/* ul{
-  box-sizing: border-box;
-  padding:inherit;
-  margin: 10px;
-  max-width: 200px;
-  flex-grow: 4; ; */
-
-}
-.row{
+.About-me p{
   display:flex;
-  flex-direction: column ;
-  max-width: fit-content;
-  align-items: center;
-  justify-content: space-evenly;
-} 
-.work{
-  flex-direction: column ;
-  max-width: fit-content;
-  align-items: center;
-  justify-content: space-evenly;
+  flex:wrap;
+  justify-content: center;
+  align-self: center;
+  box-sizing: border-box;
+  padding:relative;
 }
 
-.contact{
+.aboutme, .work, .contact{
 display:flex;
 flex-direction: row;
 justify-content:space-between;
 align-content:center;
 }
+
+.work  {
+  color:  darkslategray;
+  box-sizing:border-box;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+  gap: 2px;
+  /* grid-auto-columns: minmax(100px, auto); */
+  /* justify-content: center;
+  align-items: center ; */
+  flex: 1 0 100%;
+  padding: 1.5rem; 
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+  border: var(--border-style)  black;
+  border-width: 10px;
+ 
+  }
+
+
+section{
+  display:flex;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  margin: 20px;
+  flex: 0 0 300px;border-radius: 20px;
+  box-shadow:10px 15px 5px gray
+}
+
 aside {
+  display:flex;
+  box-sizing: border-box;
+  padding:70px;
+  margin:10px;
+  
+ 
+}
+#Prework:hover, #code-refactor:hover, #css-elements:hover{
+  box-sizing:border-box;
+  border-style:solid;
+font-size: 15px;
+border-radius: 10px;
+padding:15px;
+}
+.contact a{
+  display: flex;
+justify-content: center;
+  align-self: baseline;
+}
+ #Prework h1, h2, h3{
+  padding: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+ color:darkgoldenrod
+   }
+   
+#Prework {
+ background-image: url(./images/fun-background.png);
+max-width: 80%;
+ max-height: 90%;
+  background-size: cover;
+  color: white;
+  }
+#code-refactor{
+background-image: url(./images/desk.png);
+max-width: 40%; 
+height: 50%;
+background-size: cover;
+color: white;
+   }
+#css-elements{
+  background-image: url(./images/beach.png);
+width: 60%;
+height:50%;
+background-size: cover;
+color: white;
+}
+
+
+/* aside {
   display:flex;
   flex:wrap;
   justify-content:flex-start;
@@ -86,6 +168,28 @@ aside {
   margin-bottom: 20px;
   justify-content:space-around;
   font-size: x-large;
-  font-weight: bolder;
-}
-main
+  font-weight: bolder; */
+
+/* main section > *  {
+display:grid;
+grid-template-columns: 3fr, 1fr, 1fr;
+grid-column:row;
+box-sizing:border-box;
+border-style:solid rgb(27, 27, 100)
+} */
+
+/* transition:all 0.5s ease-in-out; */
+/* transition: flex-basis 500ms linear;
+transition: margin-right 2s, color 1s;
+flex-grow: 4: */
+
+/* grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 7; */
+
+  /* .code-refactor {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  } */
