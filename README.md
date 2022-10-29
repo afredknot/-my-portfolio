@@ -10,4 +10,4 @@ There is an about me, that tells a little about me an the journey that i am on a
 here is the link to the deployed website.
 https://afredknot.github.io/-my-portfolio/
 
-![](https://file%2B.vscode-resource.vscode-cdn.net/Users/danielnelson/Desktop/Screen%20Shot%202022-10-29%20at%206.09.10%20PM.png?version%3D1667081378935)
+![](./assets/images/screenshot.png)
