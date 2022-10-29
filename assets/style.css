@@ -68,14 +68,14 @@ footer {
   text-align: justify;
   text-orientation: sideways-right;
   margin: 20px;
+  max-height: 80%;
 }
 .About-me img{
-  background-image: url(./images/20221029_134140\ Small.png);
   max-width:80%;
    max-height: 80%;
     background-clip:padding-box;
     color: whitesmoke;
-    padding: 150px;
+    padding: 10px;
    background-position: center;
    background-size:cover;
    
