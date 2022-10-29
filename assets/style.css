@@ -25,25 +25,24 @@ body{
 header{
   display:flex;
   flex:wrap;
-  flex-direction:row;
-  max-width: 100%;
+  max-width: auto;
   border-style:solid;
   text-size-adjust: 15px;
   align-items:center;
   justify-content: space-between;
-  padding: 20px;
+  padding:relative;
   background-image: url(./images/mountian.png);
-  width: 80%;
-    height: 200px;
+  width: auto;
+    height: 300px;
     background-size: cover;
     color: white;
-    padding: 20px;
+    padding: var(--padding);
   border-width: 10px;
   border-radius: 5px;
 }
 
 
-header h1, header p, .nav a {
+header h1, header p, .nav a, nav p {
   padding: 14px 20px;
   text-align:center;
   color: rgb(10, 9, 7);
@@ -61,18 +60,34 @@ footer {
 }
 .About-me p{
   display:flex;
-  flex:wrap;
+  flex-shrink: initial;
   justify-content: center;
   align-self: center;
-  box-sizing: border-box;
-  padding:relative;
+  box-sizing: content-box;
+  text-justify:newspaper;
+  text-align: justify;
+  text-orientation: sideways-right;
+  margin: 20px;
 }
+.About-me img{
+  background-image: url(./images/profilepic.jpg);
+  max-width:80%;
+   max-height: 80%;
+    background-clip:padding-box;
+    color: whitesmoke;
+    padding: 150px;
+   background-position: center;
+   background-size:cover;
+   
+}
+.contact a{
 
-.aboutme, .work, .contact{
 display:flex;
 flex-direction: row;
-justify-content:space-between;
-align-content:center;
+flex-wrap: wrap;
+justify-content:space-around;
+align-self:center;
+padding:20px;
 }
 
 .work  {
@@ -81,22 +96,21 @@ align-content:center;
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
   gap: 2px;
-  /* grid-auto-columns: minmax(100px, auto); */
-  /* justify-content: center;
-  align-items: center ; */
   flex: 1 0 100%;
   padding: 1.5rem; 
   transition: flex-basis 500ms linear;
   margin-bottom: 1.5rem;
-  border: var(--border-style)  black;
-  border-width: 10px;
- 
   }
 
 
 section{
   display:flex;
+  flex:content;
+  flex-flow: row;
+  flex-wrap: wrap;
   border-style: solid;
+  justify-content: flex-start;
+  box-sizing: content-box;
   border-width: 1px;
   padding: 10px;
   margin: 20px;
@@ -109,9 +123,9 @@ aside {
   box-sizing: border-box;
   padding:70px;
   margin:10px;
-  
- 
+  font-size: 20px;
 }
+
 #Prework:hover, #code-refactor:hover, #css-elements:hover{
   box-sizing:border-box;
   border-style:solid;
@@ -119,11 +133,11 @@ font-size: 15px;
 border-radius: 10px;
 padding:15px;
 }
-.contact a{
+/* .contact a{
   display: flex;
-justify-content: center;
-  align-self: baseline;
-}
+  justify-content: center;
+  align-self: baseline; */
+
  #Prework h1, h2, h3{
   padding: 20px;
  display: flex;
@@ -138,7 +152,8 @@ justify-content: center;
 max-width: 80%;
  max-height: 90%;
   background-size: cover;
-  color: white;
+  color: whitesmoke;
+  
   }
 #code-refactor{
 background-image: url(./images/desk.png);
@@ -155,41 +170,3 @@ background-size: cover;
 color: white;
 }
 
-
-/* aside {
-  display:flex;
-  flex:wrap;
-  justify-content:flex-start;
-  flex-direction: row;
-  box-sizing:border-box;
-  width:150px;
-  line-height: normal;
-  align-content:flex-start;
-  margin-bottom: 20px;
-  justify-content:space-around;
-  font-size: x-large;
-  font-weight: bolder; */
-
-/* main section > *  {
-display:grid;
-grid-template-columns: 3fr, 1fr, 1fr;
-grid-column:row;
-box-sizing:border-box;
-border-style:solid rgb(27, 27, 100)
-} */
-
-/* transition:all 0.5s ease-in-out; */
-/* transition: flex-basis 500ms linear;
-transition: margin-right 2s, color 1s;
-flex-grow: 4: */
-
-/* grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 4;
-  grid-row-end: 7; */
-
-  /* .code-refactor {
-    grid-column-start: 1;
-    grid-row-start: 3;
-    grid-row-end: 5;
-  } */
