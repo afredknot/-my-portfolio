@@ -126,7 +126,7 @@ aside {
   font-size: 20px;
 }
 
-#Prework:hover, #code-refactor:hover, #css-elements:hover{
+#container-main:hover, #container-2:hover, #container-3:hover, #container-4:hover, #container-5:hover{
   box-sizing:border-box;
   border-style:solid;
 font-size: 15px;
@@ -138,35 +138,50 @@ padding:15px;
   justify-content: center;
   align-self: baseline; */
 
- #Prework h1, h2, h3{
+ #container-main h1, h2, h3{
   padding: 20px;
  display: flex;
  flex-direction: column;
  justify-content: flex-end;
- background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
- color:darkgoldenrod
+ background: linear-gradient(to top, rgba(202, 146, 67, 0.85), transparent);
+ color:rgb(216, 202, 189)
    }
-   
-#Prework {
- background-image: url(./images/fun-background.png);
-max-width: 80%;
- max-height: 90%;
+
+  h2, h3{
+   padding: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ background: linear-gradient(to top, rgba(202, 146, 67, 0.85), transparent);
+ color:rgb(104, 50, 0)
+   }
+#container-main {
+ background-image: url(./images/Zodiac.jpg);
+max-width: 1000%;
+ max-height: 600px;
   background-size: cover;
   color: whitesmoke;
   
   }
-#code-refactor{
+#container-2{
 background-image: url(./images/desk.png);
 max-width: 40%; 
 height: 50%;
 background-size: cover;
 color: white;
    }
-#css-elements{
+#container-3{
   background-image: url(./images/beach.png);
-width: 60%;
+width: 40%;
 height:50%;
 background-size: cover;
 color: white;
 }
+#container-4{
+  background-image: url(./images/fun-background.png);
+  width: 40%;
+  height: 50%;
+  background-size: cover;
+}
+
 
