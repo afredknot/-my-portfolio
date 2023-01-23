@@ -138,7 +138,7 @@ padding:15px;
   justify-content: center;
   align-self: baseline; */
 
- #container-main  h2, h3{
+ #container-main  h2, h3, h5{
   padding: 20px;
  display: flex;
  flex-direction: column;
@@ -156,7 +156,7 @@ padding:15px;
  color:rgb(168, 157, 157)
    }
 
-   #container-main h1{
+   #container-main h1, #container-5{
     padding: 20px;
    display: flex;
    flex-direction: column;
@@ -204,8 +204,8 @@ color: white;
 
 #container-5{
   background-image: url(./images/landingpage.png);
-  width:40%;
-  height: 50%;
+  max-width:70%;
+  max-height: 100%;
   background-size:cover;
 
 }
