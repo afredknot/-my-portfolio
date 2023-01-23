@@ -202,4 +202,10 @@ color: white;
   background-size: cover;
 }
 
+#container-5{
+  background-image: url(./images/landingpage.png);
+  width:40%;
+  height: 50%;
+  background-size:cover;
 
+}
